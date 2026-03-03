@@ -1,0 +1,11 @@
+# 模块二：Attention-LSTM 株高预测
+torch
+torchvision
+pandas
+numpy
+scikit-learn
+matplotlib
+joblib
+fastapi
+uvicorn[standard]
+streamlit
