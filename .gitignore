@@ -8,12 +8,6 @@ __pycache__/
 dist/
 build/
 
-# ========== 模型权重（体积大，不入库）==========
-*.pth
-*.pt
-*.pkl
-*.onnx
-
 # ========== 训练输出 ==========
 runs/
 output/
@@ -35,7 +29,6 @@ ultralytics-main1/ultralytics-main/.github/
 
 # ========== IDE ==========
 .idea/
-.vscode/
 *.iml
 
 # ========== 系统 ==========

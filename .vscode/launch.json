@@ -1,0 +1,73 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "API: LSTM 株高预测 (Port 8002)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "lstm_api:app",
+                "--host",
+                "0.0.0.0",
+                "--port",
+                "8002",
+                "--reload"
+            ],
+            "cwd": "${workspaceFolder}/pytorch-ganzhe",
+            "justMyCode": false
+        },
+        {
+            "name": "Frontend: Streamlit 界面 (Port 8501)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "start.py",
+            "cwd": "${workspaceFolder}/pytorch-ganzhe/web",
+            "justMyCode": false
+        },
+        {
+            "name": "API: 图片病害识别 (Port 8000)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "picture_api:app",
+                "--host",
+                "0.0.0.0",
+                "--port",
+                "8000",
+                "--reload"
+            ],
+            "cwd": "${workspaceFolder}/ultralytics-main1/ultralytics-main",
+            "justMyCode": false
+        },
+        {
+            "name": "API: 视频病害处理 (Port 8001)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "video_api:app",
+                "--host",
+                "0.0.0.0",
+                "--port",
+                "8001",
+                "--reload"
+            ],
+            "cwd": "${workspaceFolder}/ultralytics-main1/ultralytics-main",
+            "justMyCode": false
+        }
+    ],
+    "compounds": [
+        {
+            "name": "🚀 一键运行所有服务 (Run All)",
+            "configurations": [
+                "Frontend: Streamlit 界面 (Port 8501)",
+                "API: LSTM 株高预测 (Port 8002)",
+                "API: 图片病害识别 (Port 8000)",
+                "API: 视频病害处理 (Port 8001)"
+            ],
+            "stopAll": true
+        }
+    ]
+}
