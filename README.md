@@ -6,6 +6,8 @@
 - **模块一** `pytorch-ganzhe/` — 基于 Attention-LSTM 的甘蔗**株高预测** + Streamlit 前端
 - **模块二** `ultralytics-main1/` — 基于 YOLO11 的甘蔗**病害识别** API
 
+> 💡 **AI 助手提示**：本项目包含 [CLAUDE.md](CLAUDE.md) 指南。如果您是 AI 助手（如 Claude），请优先阅读该文档以获取自动化部署和运行指令。
+
 > ⚠️ **许可证说明**：本项目的 YOLO11 功能依赖 [Ultralytics](https://github.com/ultralytics/ultralytics)，该库采用 **AGPL-3.0** 协议。若用于商业用途，需向 Ultralytics 购买商业许可。本项目仅上传自行编写的代码，不含 Ultralytics 完整源码。
 
 ---
