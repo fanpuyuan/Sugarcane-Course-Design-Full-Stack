@@ -100,7 +100,7 @@ def create_sequences(data, lookback=45, horizon=15, target_col=4):
 
 # 主程序
 if __name__ == '__main__':
-    path = 'web/sugar_cane_growth_data.csv'
+    path = 'web/sugar_crop_data.csv'
     target_col_name = 'plant_height'
     seq_length = 45  # 建议45天（覆盖关键生长期）
     pred_length = 15  # 预测未来15天
